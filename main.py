@@ -17,3 +17,12 @@ Opção: """
         break
 
 print("Fim da execução, até uma outra hora!")
+
+from datetime import datetime
+
+class Tarefa:
+    def __init__(self, nome: str, data_criacao:datetime, prazo:datetime , tag:str):
+        self.nome = nome
+        self.data_criacao = data_criacao
+        self.prazo = prazo
+        self.tag = tag
